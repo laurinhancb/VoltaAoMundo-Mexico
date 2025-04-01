@@ -1,0 +1,7 @@
+main {
+    background-image: url(imagem-1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-attachment: fixed;
+}
