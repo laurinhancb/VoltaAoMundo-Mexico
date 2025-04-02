@@ -1,7 +1,37 @@
-main {
-    background-image: url(imagem-1.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    background-attachment: fixed;
+body {
+    overflow-x: hidden;
+    background-color: rgb(241, 241, 241);
+}
+
+.row {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: rgb(6, 54, 17);
+    height: 120px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(165, 16, 16);
+}
+
+h2 {
+    color: rgb(6, 54, 17);
+}
+
+#bandeira {
+    margin-right: 25px;
+}
+
+footer {
+    background-color: rgb(11, 75, 26);
 }
