@@ -1,11 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Informações Completas sobre o México</title>
+    <style>
+        body {
+            flex-direction: column;
+        }
+        .content-wrapper {
+            flex: 1;
+        }
+        .info-container {
+            flex-wrap: wrap;
+            gap: 2rem;
+            min-height: 60vh; /* Altura mínima para melhor centralização */
+        }
+        .flag-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        .table-container {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        @media (max-width: 925px) {
+            .info-container {
+                flex-direction: column;
+                min-height: auto;
+            }
+            .flag-container, .table-container {
+                width: 100%;
+            }
+            .flag-container {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-light h-100 d-flex">
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid flex-lg-row flex-column">
+            <!-- Título (sempre no topo) -->
+            <h1 class="navbar-brand text-white fs-6 mb-0 w-100 text-center order-lg-1 order-1">
+                Mais informações sobre o México
+            </h1>
+            
+            <!-- Botão voltar (alinha à esquerda em desktop, abaixo do título em mobile) -->
+            <div class="d-flex align-items-center me-lg-auto order-lg-0 order-2 mt-lg-0 mt-2 ml-5">
+                <a href="home.html" class="d-flex align-items-center text-decoration-none">
+                    <img src="botao-voltar.png" alt="Voltar" width="30px" style="filter: brightness(0) invert(1);" class="me-2">
+                    <span class="text-white">Voltar</span>
+                </a>
+            </div>
+            
+            <!-- Espaçador (apenas em desktop) -->
+            <div class="ms-lg-auto d-lg-block d-none order-lg-2" style="width: 30px;"></div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="content-wrapper container py-4 flex-grow-1">
+        <div class="info-container d-flex align-items-center">
+            <!-- Imagem centralizada verticalmente -->
+            <div class="flag-container d-flex justify-content-center align-items-center">
+                <img src="https://static.todamateria.com.br/upload/ba/nd/bandeira-do-mexico-og.jpg" 
+                     class="img-fluid rounded shadow" 
+                     alt="Bandeira do México"
+                     style="max-width: 100%; max-height: 400px; object-fit: contain;">
+            </div>
+            
+            <!-- Tabela -->
+            <div class="table-container">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold bg-light">Capital</td>
+                                <td class="text-danger">Cidade do México</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Gentílico</td>
+                                <td class="text-danger">Mexicano(a)</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Moeda Oficial</td>
+                                <td class="text-danger">Peso mexicano</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Língua Oficial</td>
+                                <td class="text-danger">Espanhol (oficial)</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">População Total</td>
+                                <td class="text-danger">130.262.000 habitantes</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Forma de Governo</td>
+                                <td class="text-danger">República federal presidencialista</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Localização Geográfica</td>
+                                <td class="text-danger">América do Norte</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Área Territorial</td>
+                                <td class="text-danger">1.964.375 km²</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold bg-light">Principais Cidades</td>
+                                <td class="text-danger">Cidade do México, Guadalajara, Monterrey, Puebla, Tijuana</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-white text-center py-3">
+        <div class="container">
+            <p class="mb-1">© 2025</p>
+            <p class="mb-0"><i>Desenvolvido por Laura Brianti</i></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
