@@ -6,6 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        .container{
+            width: 85%;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -38,12 +46,80 @@
             </div>
         </div>
     </nav>
-    <div>Conteúdo acima</div>
-<!-- 
-  my-4 = margem vertical 
-  border-2 = espessura da linha
-  opacity-100 = remove transparência
--->
-<div>Conteúdo abaixo</div>
+    <div class="container mt-5 mx-auto text-center">  <!-- Adicionei text-center aqui -->
+        <p class="lh-lg fs-5">
+            A cultura mexicana é uma mistura vibrante de tradições ancestrais e influências externas. Suas raízes 
+            remontam a civilizações pré-colombianas, como os astecas e maias, que deixaram um legado de conhecimentos 
+            avançados, arte, arquitetura e crenças profundas. Com a colonização espanhola, elementos europeus foram 
+            incorporados, especialmente na língua, religião e gastronomia, criando um sincretismo único.
+        </p>
+        <p class="lh-lg fs-5">
+            Hoje, o México também sofre influência da cultura norte-americana, principalmente devido à globalização e à 
+            proximidade geográfica com os EUA. Isso se reflete no consumo de filmes, música, moda e até mesmo na expansão 
+            de redes de fast-food. No entanto, apesar dessas influências, o México preserva fortemente sua identidade, 
+            mantendo vivos seus costumes, festivais, culinária tradicional e valores culturais, que continuam a ser um 
+            símbolo de orgulho nacional.
+        </p>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 col-lg-7 p-0">
+                <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <!-- Slide 1 - Cancún -->
+                        <div class="carousel-item active h-100">
+                            <img src="img/turismo.webp" class="d-block w-100 h-100" style="object-fit: cover;" alt="Cancún">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                <h5 class="text-white mb-2"><strong>Pontos turísticos</strong></h5>
+                                <p class="mb-0 text-center">O México, o destino latino-americano mais visitado, atrai turistas com suas pirâmides pré-colombianas, arquitetura colonial e praias paradisíacas.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 - Cidade do México -->
+                        <div class="carousel-item h-100">
+                            <img src="img/culinaria.webp" class="d-block w-100 h-100" style="object-fit: cover;" alt="Cidade do México">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                <h5 class="text-white mb-2"><strong>Culinária mexicana</strong></h5>
+                                <p class="mb-0 text-center">A gastronomia mexicana foi reconhecida como Patrimônio Cultural Imaterial da Humanidade pela UNESCO.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 - Riviera Maya -->
+                        <div class="carousel-item h-100">
+                            <img src="img/festa.jpeg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Riviera Maya">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                                <h5 class="text-white mb-2"><strong>Festas mexicanas</strong></h5>
+                                <p class="mb-0 text-center">Festividades como o Dia dos Mortos, a Guelaguetza e o Grito da Independência refletem a alma alegre e comunitária do México.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-white text-center py-3">
+        <div class="container">
+            <p class="mb-1 text-center">© 2025</p>
+            <p class="mb-0 text-center"><i>Desenvolvido por Laura Brianti</i></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
