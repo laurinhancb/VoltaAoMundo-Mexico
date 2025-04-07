@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Turismo</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        .container {
+            width: 85%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Container principal com alinhamento -->
+            <div class="d-flex flex-lg-row flex-column w-100 align-items-center">
+                <!-- Botão Voltar (esquerda em desktop, abaixo em mobile) -->
+                <div class="order-lg-0 order-2 mt-lg-0 mt-3 me-lg-auto">
+                    <a href="home.html" class="d-flex align-items-center text-decoration-none">
+                        <img src="img/botao-voltar.png" alt="Voltar" width="30px" style="filter: brightness(0) invert(1);" class="me-2">
+                        <span class="text-white">Voltar</span>
+                    </a>
+                </div>
+                
+                <!-- Bandeira + Título (sempre centralizado) -->
+                <div class="order-lg-1 order-1 mx-lg-auto mx-0">
+                    <div class="d-flex align-items-center">
+                        <img src="https://static.todamateria.com.br/upload/ba/nd/bandeira-do-mexico-og.jpg" 
+                             class="img-fluid shadow me-3" 
+                             alt="Bandeira do México"
+                             style="max-height: 40px; width: auto;">
+                        <h1 class="navbar-brand text-white fs-5 mb-0">
+                            Turismo no México
+                        </h1>
+                    </div>
+                </div>
+                
+                <!-- Espaçador (apenas desktop) -->
+                <div class="order-lg-2 ms-lg-auto d-lg-block d-none" style="width: 30px;"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mx-auto text-center">  <!-- Adicionei text-center aqui -->
+        <p class="lh-lg fs-5">
+            O turismo é vital para a economia mexicana, sendo o 8º país mais visitado do mundo e o principal destino da América Latina, recebendo cerca de 4 milhões de turistas estrangeiros anualmente.
+        </p>
+        <div class="d-flex justify-content-center">  <!-- Container flex para centralizar -->
+            <figure class="text-center">  <!-- Adicionei text-center aqui -->
+                <img src="img/praia.jpg" alt="Praia" class="img-fluid rounded" width="90%">  <!-- img-fluid para responsividade -->
+                <figcaption class="mt-2">O México é conhecido pelas suas diversas praias exuberantes</figcaption>
+            </figure>
+        </div>
+        
+        <p class="lh-lg fs-5">
+            O México encanta visitantes com seus atrativos culturais e naturais. A capital, Cidade do México, é o destino mais procurado, junto com sítios arqueológicos da civilização mesoamericana. O país também se destaca por suas deslumbrantes paisagens costeiras, como as famosas praias de Acapulco e Cancún.
+        </p>
+    </div>
+
+    <div class="container-fluid">
+        <!-- Alterei para flex-wrap e adicionei classes responsivas -->
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-nowrap gap-3 py-3 overflow-lg-auto">
+            <!-- Card Cancún -->
+            <div class="card flex-shrink-0 mx-auto mx-lg-0" style="width: 22rem;">
+                <img src="img/cancun.jpg" class="card-img-top" alt="Cancún">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cancún</h5>
+                    <p class="card-text text-center">Praias paradisíacas com águas turquesa e infraestrutura turística completa.</p>
+                </div>
+            </div>
+    
+            <!-- Card Acapulco -->
+            <div class="card flex-shrink-0 mx-auto mx-lg-0" style="width: 22rem;">
+                <img src="img/acapulco.jpg" class="card-img-top" alt="Acapulco">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Acapulco</h5>
+                    <p class="card-text text-center">Praias urbanas vibrantes com mergulhos espetaculares e vida noturna animada.</p>
+                </div>
+            </div>
+    
+            <!-- Card Cozumel -->
+            <div class="card flex-shrink-0 mx-auto mx-lg-0" style="width: 22rem;">
+                <img src="img/Cozumel.jpg" class="card-img-top" alt="Cozumel">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cozumel</h5>
+                    <p class="card-text text-center">Paraíso do mergulho com praias intocadas e os melhores recifes do Caribe.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- Rodapé -->
+    <footer class="text-white text-center py-3">
+        <div class="container">
+            <p class="mb-1 text-center">© 2025</p>
+            <p class="mb-0 text-center"><i>Desenvolvido por Laura Brianti</i></p>
+        </div>
+    </footer>
+</body>
+</html>

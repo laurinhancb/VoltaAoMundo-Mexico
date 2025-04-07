@@ -12,20 +12,12 @@ nav {
     height: 120px;
 }
 
-.texto {
-    text-align: justify;
-}
-
 h1 {
     color: rgb(165, 16, 16);
 }
 
 h2 {
     color: rgb(6, 54, 17);
-}
-
-#bandeira {
-    margin-right: 25px;
 }
 
 footer {
