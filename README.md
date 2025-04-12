@@ -27,7 +27,7 @@ O site apresenta informações sobre:
  
 O projeto consiste em 5 páginas HTML principais:
  
-- **home.html** - Página inicial com carrossel de imagens e introdução
+- **index.html** - Página inicial com carrossel de imagens e introdução
 - **historia.html** - Carrossel de imagens e resumo da história do México
 - **gastronomia.html** - Card de imagens e link para receitas
 - **turismo.html** - Card de imagens de praias e mais informações sobre o turismo mexicano
